@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
 @SpireInitializer
-public class LaunchPad implements EditKeywordsSubscriber {
+public class LaunchPad implements PostInitializeSubscriber {
 
     public static final String modID = "launchpad"; //TODO: Change this.
 
@@ -36,17 +36,7 @@ public class LaunchPad implements EditKeywordsSubscriber {
     }
 
     @Override
-    public void receiveEditKeywords() {
-        /*
-        Gson gson = new Gson();
-        String json = Gdx.files.internal(modID + "Resources/localization/eng/Keywordstrings.json").readString(String.valueOf(StandardCharsets.UTF_8));
-        com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
-
-        if (keywords != null) {
-            for (Keyword keyword : keywords) {
-                BaseMod.addKeyword(modID, keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
-            }
-        }
-         */
+    public void receivePostInitialize() {
+        
     }
 }
