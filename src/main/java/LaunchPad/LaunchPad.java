@@ -37,6 +37,6 @@ public class LaunchPad implements PostInitializeSubscriber {
 
     @Override
     public void receivePostInitialize() {
-        
+
     }
 }
